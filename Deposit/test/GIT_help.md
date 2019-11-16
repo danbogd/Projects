@@ -51,7 +51,21 @@ git add * // для всех (реком.)
 
 git commit -m "end" --date 2019-11-01T22:22:30
 
-/////////////////////////////////////////////////////////////////////////////////////////////// 
+# Постоянная аутентификация с репозиториями Git (не требуется каждый раз вводить пароль)
+
+git config credential.helper store
+git push https://github.com/repo.git
+
+Username for 'https://github.com': <USERNAME>
+Password for 'https://USERNAME@github.com': <PASSWORD>
+
+* распространенной ошибкой является клонирование по умолчанию (HTTPS) вместо SSH. 
+Вы можете исправить это, перейдя в свой репозиторий, нажав "клонировать или загружать", 
+затем нажав кнопку" использовать SSH " над полем URL и обновив URL-адрес вашего origin remote следующим образом:
+
+git remote set-url origin git@github.com:username/repo.git
+
+///////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 git init // локально
 
@@ -67,5 +81,5 @@ git remote -v // проверка правильно "соединили" лок
 
 git push -u origin master
 
-sudo apt install gnome-tweaks
+
  
