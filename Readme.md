@@ -1,5 +1,5 @@
 # Projects
 
-## Ponzi deposit smart-contract
+## Ponzi deposit smart-contract.
 
-## MetaCoin smart-contract
+## MetaCoin smart-contract.

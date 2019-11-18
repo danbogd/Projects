@@ -1,10 +1,11 @@
 
-const MetaCoin = artifacts.require("SafeMath");
+var MyContract = artifacts.require("SafeMath");
 
 module.exports = function(deployer) {
-    
-deployer.deploy(SefeMath);
+  // deployment steps
+  deployer.deploy(MyContract);
 };
+
 
 
 
